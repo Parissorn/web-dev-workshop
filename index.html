@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="user.html">Direct to user management page</a>
+    <div class="container">
+        <div class="header form-input">
+            Register form
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">Firstname</div>
+            <input class="form" name="firstname" type="text">
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">Lastname </div>
+            <input class="form" name="lastname" type="text">
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">Age</div>
+            <input class="form" name="age" type="number" min="0" max="100">
+        </div>
+        <div class="flex gender form-input">
+            <div class="header-form">Gender</div>
+            <div class="flex">
+                <div>
+                    <input name="gender" type="radio" value="male"> male
+                </div>
+                <div>
+                    <input name="gender" type="radio" value="female"> female
+                </div>
+                <div>
+                    <input name="gender" type="radio" value="unidentified"> unidentified
+                </div>
+            </div>
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">Interests</div>
+            <div class="flex">
+                <div>
+                    <input name="interest" type="checkbox" value="Books"> Books
+                </div>
+                <div>
+                    <input name="interest" type="checkbox" value="Games"> Games
+                </div>
+                <div>
+                    <input name="interest" type="checkbox" value="Politics"> Politics
+                </div>
+            </div>
+        </div>
+        <div class="form-input">
+            <div class="header-form dess">Description</div>
+            <div>
+                <textarea name="description"></textarea>
+            </div>
+        </div>
+        <div class="form-input center">
+            <a href="https://shopee.com">T&C</a>
+        </div>
+        <div class="message">
+        </div>
+        <div class="center">
+            <button onclick="submitData()" class="button">Submit</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
